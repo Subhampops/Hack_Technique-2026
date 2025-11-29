@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CustomDevfolioButton from './CustomDevfolioButton'; // Adjust path as needed
 
 const Home = () => {
   const [time, setTime] = useState({
@@ -79,14 +80,9 @@ const Home = () => {
                 </h2>
               </div>
 
-              {/* Devfolio Apply Button */}
+              {/* Custom Devfolio Apply Button */}
               <div className="flex justify-center">
-                <div 
-                  className="apply-button" 
-                  data-hackathon-slug="hack-technique2026" 
-                  data-button-theme="light"
-                  style={{ height: '44px', width: '312px' }}
-                ></div>
+                <CustomDevfolioButton />
               </div>
             </div>
 

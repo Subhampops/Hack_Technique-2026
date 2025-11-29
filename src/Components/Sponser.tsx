@@ -36,6 +36,14 @@ const SponsorsPage = () => {
         url: "https://www.redbull.com/in-en", // Add actual URL
         alt: "Drink Partner LOGO"
       }
+    ],
+    domain: [
+      {
+        name: "XYZ",
+        logo: "/xyz.png", // Update with actual path
+        url: "", // Add actual URL
+        alt: "xyz domain LOGO"
+      }
     ]
   };
 
@@ -64,7 +72,9 @@ const SponsorsPage = () => {
                     <img
                       src={sponsor.logo}
                       alt={`${sponsor.name} logo`}
-                      className="w-full h-full object-contain"
+                      className={`w-full h-full object-contain ${
+                        sponsor.name === "XYZ" ? "rounded-xl" : ""
+                      }`}
                     />
                   </div>
                   <div className="text-white/80 text-xl font-semibold">
@@ -102,7 +112,9 @@ const SponsorsPage = () => {
                     <img
                       src={partner.logo}
                       alt={`${partner.name} logo`}
-                      className="w-full h-full object-contain"
+                      className={`w-full h-full object-contain ${
+                        partner.name === "XYZ" ? "rounded-xl" : ""
+                      }`}
                     />
                   </div>
                   <div className="text-white/80 text-xl font-semibold">
@@ -166,6 +178,12 @@ const SponsorsPage = () => {
         <PartnerSection
           title="Community Partners"
           partners={sponsors.partners}
+          titleColor="text-white"
+        />
+        {/* Domain Partners */}
+        <PartnerSection
+          title="Domain Partner"
+          partners={sponsors.domain}
           titleColor="text-white"
         />
       </div>
