@@ -47,7 +47,8 @@ const CustomDevfolioButton: React.FC<CustomDevfolioButtonProps> = ({
 
             {/* Text */}
             <span className="custom-devfolio-button-text">
-              Apply with Devfolio
+              {/* Apply with Devfolio */}
+              Applications open soon
             </span>
           </div>
 

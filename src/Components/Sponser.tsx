@@ -18,8 +18,19 @@ const SponsorsPage = () => {
         alt: "ETHINDIA LOGO"
       }
     ],
-    bronze: [
-      // Add bronze sponsors here when available
+    inkind: [
+      {
+        name: "Code Crafters",
+        logo: "/codecrafters.png", 
+        url: "https://codecrafters.io/ ",
+        alt: "Code Crafters LOGO"
+      },
+      {
+        name: "Beeceptor",
+        logo: "/beeceptor.png", 
+        url: "https://beeceptor.com/ ",
+        alt: "Beeceptor LOGO"
+      },
     ],
     partners: [
       {
@@ -156,11 +167,11 @@ const SponsorsPage = () => {
           titleColor="bg-gradient-to-r from-gray-300 to-gray-500 bg-clip-text text-transparent"
         />
 
-        {/* Bronze Sponsors */}
+        {/* Inkind Sponsors */}
         <SponsorSection
-          title="Our Bronze Sponsors"
-          sponsors={sponsors.bronze}
-          titleColor="bg-gradient-to-r from-orange-700 to-orange-900 bg-clip-text text-transparent"
+          title="Our Inkind Sponsor"
+          sponsors={sponsors.inkind}
+          titleColor="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent"
         />
 
         {/* Drink Partner */}
@@ -180,7 +191,7 @@ const SponsorsPage = () => {
         <PartnerSection
           title="Domain Partner"
           partners={sponsors.domain}
-          titleColor="text-white"
+          titleColor="bg-gradient-to-r from-indigo-500 to-violet-600 bg-clip-text text-transparent"
         />
       </div>
     </div>

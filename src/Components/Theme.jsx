@@ -71,22 +71,22 @@ const TracksPage = () => {
   const tracks = [
     {
       icon: Cpu,
-      title: 'Hardware Hacks',
+      title: 'Hardware',
       description: 'Build innovative solutions using Arduino, Raspberry Pi, and IoT devices.'
     },
     {
       icon: Code2,
-      title: 'Blockchain Hacks',
+      title: 'Blockchain',
       description: 'Create decentralized applications, smart contracts, and blockchain-based solutions.'
     },
     {
       icon: Globe,
-      title: 'Web Development Hacks',
+      title: 'Web Development',
       description: 'Develop responsive web applications using modern frameworks and technologies.'
     },
     {
       icon: Brain,
-      title: 'AI/ML Hacks',
+      title: 'AI/ML',
       description: 'Build intelligent solutions using machine learning and deep learning.'
     }
   ];
