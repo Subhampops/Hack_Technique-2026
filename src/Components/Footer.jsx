@@ -144,9 +144,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-gray-400 text-sm sm:text-base text-center sm:text-right">
+          {/* <div className="text-gray-400 text-sm sm:text-base text-center sm:text-right">
             Website Developed by <span className="text-orange-500">Dhrubojyoti Chakraborty</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

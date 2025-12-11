@@ -1,7 +1,47 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { Clock, CalendarDays, Timer } from 'lucide-react';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const TimelineWithBackground = () => {
+  const timelineData = [
+    {
+      date: "Tuesday, Jan 6",
+      time: "10:00 AM",
+      title: "Check-in Starts",
+    },
+    {
+      date: "Tuesday, Jan 6",
+      time: "10:20 AM",
+      title: "Hackathon Starts",
+      
+    },
+    {
+      date: "Tuesday, Jan 6",
+      time: "12:00 - 1:00 PM",
+      title: "Mentoring Round",
+    
+    },
+    {
+      date: "Tuesday, Jan 6",
+      time: "1:00 - 1:40 PM",
+      title: "Lunch Time",
+      
+    },
+    {
+      date: "Tuesday, Jan 6",
+      time: "4:00 - 5:00 PM",
+      title: "Judging Round",
+      
+    },
+    {
+      date: "Tuesday, Jan 6",
+      time: "5:00 - 6:00 PM",
+      title: "Hackathon Ends",
+      
+    },
+  ];
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-black to-red-900/50">
       {/* Gradient Orbs for background effect */}
@@ -26,37 +66,59 @@ const TimelineWithBackground = () => {
             </p>
           </div>
 
-          {/* Coming Soon Section */}
+          {/* Timeline */}
           <div className="relative max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-center"
-            >
-              <div className="bg-black/20 backdrop-blur-lg border border-white/5 rounded-2xl p-16 shadow-2xl">
-                <motion.h2 
-                  className="text-5xl lg:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-orange-500 mb-8"
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.6, delay: 0.5 }}
-                >
-                  Coming Soon!
-                </motion.h2>
-                <motion.p 
-                  className="text-white/70 text-xl"
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.6, delay: 0.7 }}
-                >
-                  We're preparing something amazing for you. Stay tuned!
-                </motion.p>
-              </div>
-            </motion.div>
+            {/* Vertical line */}
+            <div className="absolute left-1/2 w-1 h-full bg-gradient-to-b from-red-500/20 via-orange-500/50 to-transparent transform -translate-x-1/2"></div>
+
+            {/* Timeline items */}
+            <div className="space-y-12">
+              {timelineData.map((item, index) => (
+                <TimelineItem key={index} item={item} index={index} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </div>
+  );
+};
+
+const TimelineItem = ({ item, index }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="relative group"
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+    >
+      {/* Circle indicator */}
+      <div className="absolute left-1/2 w-6 h-6 bg-gradient-to-br from-red-500 to-orange-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
+      
+      {/* Card */}
+      <motion.div
+        className={`w-full md:w-96 p-6 rounded-2xl backdrop-blur-lg bg-black/20 border border-white/5 shadow-lg transition-all duration-300 hover:bg-white/5 ${
+          index % 2 === 0 ? 'md:ml-auto' : 'md:mr-auto'
+        }`}
+        whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 69, 0, 0.5)" }}
+      >
+        <div className="flex items-center gap-3 text-gray-300 mb-4">
+          <CalendarDays className="w-5 h-5 text-orange-500" />
+          <span className="text-base">{item.date}</span>
+        </div>
+        <div className="flex items-center gap-3 text-gray-300 mb-6">
+          <Clock className="w-5 h-5 text-orange-500" />
+          <span className="text-base">Starts from {item.time}</span>
+        </div>
+        <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-orange-500 transition-colors">
+          {item.title}
+        </h3>
+      </motion.div>
+    </motion.div>
   );
 };
 
