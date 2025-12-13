@@ -133,47 +133,49 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation */}
-          {isOpen && (
-            <div className="md:hidden pt-3 sm:pt-4 pb-4 sm:pb-6 px-4 sm:px-6 mt-2 sm:mt-4 border-t border-purple-500/30">
-              <div className="flex flex-col space-y-3 sm:space-y-4">
+          {/* Mobile Navigation */}
+{isOpen && (
+  <div className="md:hidden pt-3 sm:pt-4 pb-4 sm:pb-6 px-4 sm:px-6 mt-2 sm:mt-4 border-t border-purple-500/30">
+    <div className="flex flex-col space-y-3 sm:space-y-4">
 
-                <button onClick={() => scrollToSection('home')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
-                  <Home className="w-5 h-5" />
-                  Home
-                </button>
+      <button onClick={() => scrollToSection('home')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
+        <Home className="w-5 h-5" />
+        Home
+      </button>
 
-                <button onClick={() => scrollToSection('about')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
-                  <Info className="w-5 h-5" />
-                  About
-                </button>
+      <button onClick={() => scrollToSection('about')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
+        <Info className="w-5 h-5" />
+        About
+      </button>
 
-                <button onClick={() => scrollToSection('venue')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
-                  <MapPin className="w-5 h-5" />
-                  Venue
-                </button>
+      <button onClick={() => scrollToSection('venue')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
+        <MapPin className="w-5 h-5" />
+        Venue
+      </button>
 
-                <button onClick={() => scrollToSection('timeline')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
-                  <CalendarClock className="w-5 h-5" />
-                  Timeline
-                </button>
+      <button onClick={() => scrollToSection('timeline')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
+        <CalendarClock className="w-5 h-5" />
+        Timeline
+      </button>
 
-                <button onClick={() => scrollToSection('tracks')} className="text-white/80 hover:text-orange-500 text-base lg:text-lg font-medium transition-colors hover:scale-105 transform duration-300 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5" />
-                  Tracks
-                </button>
+      {/* Fixed Tracks button */}
+      <button onClick={() => scrollToSection('tracks')} className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2">
+        <HelpCircle className="w-5 h-5" />
+        Tracks
+      </button>
 
-                <Link 
-                  to="/crew"
-                  onClick={() => setIsOpen(false)}
-                  className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2"
-                >
-                  <Users className="w-5 h-5" />
-                  Crew
-                </Link>
+      <Link 
+        to="/crew"
+        onClick={() => setIsOpen(false)}
+        className="text-white/80 hover:text-orange-500 px-3 sm:px-4 py-1.5 sm:py-2 text-base sm:text-lg font-medium transition-colors rounded-lg hover:bg-black/20 flex items-center gap-2"
+      >
+        <Users className="w-5 h-5" />
+        Crew
+      </Link>
 
-              </div>
-            </div>
-          )}
+    </div>
+  </div>
+)}
 
         </div>
       </div>

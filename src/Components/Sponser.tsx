@@ -28,6 +28,18 @@ const SponsorsPage = () => {
     ],
     inkind: [
       {
+        name: "Mastra",
+        logo: "/mastra.png", 
+        url: "https://mastra.ai/",
+        alt: "Mastra LOGO"
+      },
+      {
+        name: "Modisconto",
+        logo: "/modisconto.png", 
+        url: "",
+        alt: "Modisconto LOGO"
+      },
+      {
         name: "Code Crafters",
         logo: "/codecrafters.png", 
         url: "https://codecrafters.io/ ",
@@ -39,6 +51,12 @@ const SponsorsPage = () => {
         url: "https://beeceptor.com/ ",
         alt: "Beeceptor LOGO"
       },
+      {
+        name: "Hacktropica",
+        logo: "/hacktropica.png",
+        url: "",
+        alt: "Hacktropica LOGO"
+      },
     ],
     partners: [
       {
@@ -46,12 +64,6 @@ const SponsorsPage = () => {
         logo: "/innovatex.png",
         url: "https://innovatexcommunity.netlify.app/ ",
         alt: "InnovateX Community LOGO"
-      },
-      {
-        name: "",
-        logo: "/hacktropica.png",
-        url: "",
-        alt: "Hacktropica LOGO"
       },
       {
         name: "",
