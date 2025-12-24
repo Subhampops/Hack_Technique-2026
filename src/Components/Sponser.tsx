@@ -52,6 +52,12 @@ const SponsorsPage = () => {
         alt: "Beeceptor LOGO"
       },
       {
+        name: "Zero Move",
+        logo: "/zeromove.png", 
+        url: "https://zero-move-beta.vercel.app/",
+        alt: "Zero Move LOGO"
+      },
+      {
         name: "Hacktropica",
         logo: "/hacktropica.png",
         url: "",

@@ -52,6 +52,10 @@ const JudgesPage = () => {
       linkedin: 'https://www.linkedin.com/in/subham2409/',
     },
     {
+      image: '/arindam.png',
+      linkedin: 'https://www.linkedin.com/in/arindam-halder-0798/',
+    },
+    {
       image: '/rumsha.png',
       linkedin: 'https://www.linkedin.com/in/rumsha-waqia-wania-129718254/',
     },
