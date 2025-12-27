@@ -191,8 +191,8 @@ const CrewPage = () => {
       role: 'Volunteer',
       image: '/tandra.png',
       socials: {
-        instagram: 'https://instagram.com/tandra_mukherjee',
-        linkedin: 'https://linkedin.com/in/tandra-mukherjee',
+        instagram: '',
+        linkedin: '',
         facebook: ''
       }
     },
