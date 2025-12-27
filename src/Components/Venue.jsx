@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Navigation, Clock, Phone } from 'lucide-react';
+import { MapPin, Navigation, Clock, Phone, Calendar } from 'lucide-react';
 
 const Venue = () => {
   const address = {
@@ -74,17 +74,31 @@ const Venue = () => {
               <p className="text-white/80">{address.timing}</p>
             </div>
 
-            {/* Google Maps Link */}
-            <a
-              href="https://maps.google.com/?q=Technique+Polytechnic+Institute"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center justify-center gap-2 px-6 py-4 rounded-xl mt-4 group ${glassStyle} animate-fadeIn hover:bg-gradient-to-r hover:from-red-500/20 hover:to-orange-500/20`}
-              style={{ animationDelay: '800ms' }}
-            >
-              <Navigation className="w-5 h-5 text-white group-hover:rotate-45 transition-transform duration-300" />
-              <span className="text-white">Get Directions</span>
-            </a>
+            {/* Buttons Container */}
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              {/* Get Directions Button */}
+              <a
+                href="https://maps.google.com/?q=Technique+Polytechnic+Institute"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center justify-center gap-2 px-4 py-4 rounded-xl group ${glassStyle} animate-fadeIn hover:bg-gradient-to-r hover:from-red-500/20 hover:to-orange-500/20`}
+                style={{ animationDelay: '800ms' }}
+              >
+                <Navigation className="w-5 h-5 text-white group-hover:rotate-45 transition-transform duration-300" />
+                <span className="text-white text-center">Get Directions</span>
+              </a>
+
+              {/* Event Guide Button */}
+              <a
+                href="https://uttermost-chameleon-d50.notion.site/Hack-Technique-2026-Guide-2b8d62a48e1381c38a0dd7daf065f48c"  // Update this with your actual event guide page URL
+                target='_blank'
+                className={`flex items-center justify-center gap-2 px-4 py-4 rounded-xl group ${glassStyle} animate-fadeIn hover:bg-gradient-to-r hover:from-red-500/20 hover:to-orange-500/20`}
+                style={{ animationDelay: '800ms' }}
+              >
+                <Calendar className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+                <span className="text-white text-center">Event Guide</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

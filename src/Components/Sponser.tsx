@@ -33,6 +33,28 @@ const SponsorsPage = () => {
         url: "https://mastra.ai/",
         alt: "Mastra LOGO"
       },
+
+      {
+        name: "Hacktropica",
+        logo: "/hacktropica.png",
+        url: "",
+        alt: "Hacktropica LOGO"
+      },
+
+      {
+        name: "Inaara Web Solutions",
+        logo: "/inaara.jpeg", 
+        url: "https://inaarawebsolutions-ctp.caffeine.xyz/",
+        alt: "Inaara Web Solutions LOGO"
+      },
+
+      {
+        name: "Dynamic Gold Fitness Hub",
+        logo: "/gym.jpeg", 
+        url: "",
+        alt: "Dynamic Gold Fitness Hub LOGO"
+      },
+      
       {
         name: "Modisconto",
         logo: "/modisconto.png", 
@@ -56,12 +78,6 @@ const SponsorsPage = () => {
         logo: "/zeromove.png", 
         url: "https://zero-move-beta.vercel.app/",
         alt: "Zero Move LOGO"
-      },
-      {
-        name: "Hacktropica",
-        logo: "/hacktropica.png",
-        url: "",
-        alt: "Hacktropica LOGO"
       },
     ],
     partners: [

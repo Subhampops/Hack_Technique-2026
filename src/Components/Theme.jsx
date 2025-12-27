@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cpu, Code2, Globe, Brain, Shield } from 'lucide-react';
+import { Cpu, Code2, Globe, Brain, Shield , Sparkles, Users} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AnimatedCard = ({ icon: Icon, title, description }) => {
@@ -114,7 +114,13 @@ const TracksPage = () => {
       icon: Shield,
       title: 'Cybersecurity',
       description: 'Work on security tools, threat detection, ethical hacking, and secure systems.',
-    }
+    },
+    {
+    icon: Sparkles,
+    title: 'All Girls Track',
+    description: 'An exclusive track for girls to build innovative solutions, and showcase their technical skills in the hackathon.',
+},
+
   ];
 
   return (

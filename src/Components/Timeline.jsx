@@ -7,7 +7,7 @@ const TimelineWithBackground = () => {
   const timelineData = [
     {
       date: "Tuesday, Jan 6",
-      time: "10:00 AM",
+      time: "8:00 AM - 10:00 AM",
       title: "Check-in Starts",
     },
     {
