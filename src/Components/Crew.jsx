@@ -207,6 +207,16 @@ const CrewPage = () => {
       }
     },
     {
+      name: 'Anisha Saha',
+      role: 'Volunteer',
+      image: '/anisha.png',
+      socials: {
+        instagram: 'https://www.instagram.com/anisha_saha67/',
+        linkedin: 'https://www.linkedin.com/in/anisha-saha-7aaa4239b/',
+        facebook: ''
+      }
+    },
+    {
       name: 'Deepsikha Mukherjee',
       role: 'Volunteer',
       image: '/deepsikha.png',

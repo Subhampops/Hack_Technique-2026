@@ -6,19 +6,19 @@ const PrizeSection = () => {
     {
       position: "2nd",
       trophy: "/2nd prize.png",
-      prize: "TBD",
+      prize: "₹ 2000",
       size: "w-56 h-56 md:w-70 md:h-70" 
     },
     {
       position: "1st",
       trophy: "/1st prize.png", 
-      prize: "TBD",
+      prize: "₹ 3000",
       size: "w-64 h-64 md:w-82 md:h-82"
     },
     {
       position: "3rd",
       trophy: "/3rd prize.png",
-      prize: "TBD",
+      prize: "₹ 1000",
       size: "w-56 h-56 md:w-65 md:h-65" 
     }
   ];
@@ -75,7 +75,7 @@ const PrizeSection = () => {
                       2nd Prize
                     </h3>
                     <p className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-400 mb-1">
-                      TBD
+                      ₹ 2000
                     </p>
                   </div>
                 </motion.div>
@@ -103,7 +103,7 @@ const PrizeSection = () => {
                       1st Prize
                     </h3>
                     <p className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-400 mb-1">
-                      TBD
+                      ₹ 3000
                     </p>
                   </div>
                 </motion.div>
@@ -131,7 +131,7 @@ const PrizeSection = () => {
                       3rd Prize
                     </h3>
                     <p className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-400 mb-1">
-                      TBD
+                      ₹ 1000
                     </p>
                   </div>
                 </motion.div>
