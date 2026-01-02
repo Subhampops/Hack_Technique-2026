@@ -4,7 +4,7 @@ const AboutPage = () => {
   const stats = [
     { number: 20, label: "Volunteers" },
     { number: 10, label: "Organizers" },
-    { number: 200, label: "Participants" },
+    { number: 500, label: "Participants" },
     { number: 10, label: "Mentors" }
   ];
 

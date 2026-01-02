@@ -42,17 +42,17 @@ const SponsorsPage = () => {
       },
 
       {
-        name: "Inaara Web Solutions",
-        logo: "/inaara.jpeg", 
-        url: "https://inaarawebsolutions-ctp.caffeine.xyz/",
-        alt: "Inaara Web Solutions LOGO"
+        name: "Hacknest",
+        logo: "/hacknest.jpeg", 
+        url: "",
+        alt: "Hacknest LOGO"
       },
 
       {
-        name: "Dynamic Gold Fitness Hub",
-        logo: "/gym.jpeg", 
+        name: "Vista.js",
+        logo: "/vista.png", 
         url: "",
-        alt: "Dynamic Gold Fitness Hub LOGO"
+        alt: "Vista.js LOGO"
       },
       
       {

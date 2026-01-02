@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cpu, Code2, Globe, Brain, Shield , Sparkles, Users} from 'lucide-react';
+import { Cpu, Code2, Globe, Brain, Shield, Sparkles, Lightbulb, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AnimatedCard = ({ icon: Icon, title, description }) => {
@@ -39,14 +39,10 @@ const AnimatedCard = ({ icon: Icon, title, description }) => {
         ${isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}
       >
         <div className="flex flex-col items-center justify-center h-full">
-          {/* FIXED ROTATION LOGIC HERE */}
+          {/* Fixed: Removed rotation logic */}
           <div
             className={`w-16 h-16 rounded-full bg-gradient-to-br from-orange-500/30 to-red-500/30 flex items-center justify-center mb-6 transition-all duration-500 ${
-              isHovered
-                ? title === 'Cybersecurity'
-                  ? 'rotate-0 scale-100'
-                  : 'rotate-180 scale-100'
-                : 'rotate-0 scale-0'
+              isHovered ? 'scale-100' : 'scale-0'
             }`}
           >
             <Icon className="w-8 h-8 text-white" />
@@ -116,11 +112,20 @@ const TracksPage = () => {
       description: 'Work on security tools, threat detection, ethical hacking, and secure systems.',
     },
     {
-    icon: Sparkles,
-    title: 'All Girls Track',
-    description: 'An exclusive track for girls to build innovative solutions, and showcase their technical skills in the hackathon.',
-},
-
+      icon: Lightbulb,
+      title: 'Best Innovative Idea',
+      description: 'Awarded to the team that presents the most creative, impactful, and forward-thinking solution during the hackathon.',
+    },
+    {
+      icon: GraduationCap,
+      title: 'Best Beginner Team',
+      description: 'Recognizes first-time hackers or beginner teams who demonstrate strong learning, teamwork, and promising problem-solving skills.',
+    },
+    {
+      icon: Sparkles,
+      title: 'All Girls Track',
+      description: 'An exclusive track for girls to build innovative solutions, and showcase their technical skills in the hackathon.',
+    },
   ];
 
   return (
