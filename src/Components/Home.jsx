@@ -24,19 +24,42 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const targetDate = new Date('2026-01-06').getTime();
+    const targetDate = new Date('2026-01-06T10:30:00').getTime();
 
     const updateTimer = () => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
+  const now = new Date().getTime();
+  const distance = targetDate - now;
 
-      setTime({
-        days: Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0'),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0'),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0'),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0')
-      });
-    };
+  if (distance <= 0) {
+    setTime({
+      days: '00',
+      hours: '00',
+      minutes: '00',
+      seconds: '00'
+    });
+    return;
+  }
+
+  setTime({
+    days: Math.floor(distance / (1000 * 60 * 60 * 24))
+      .toString()
+      .padStart(2, '0'),
+    hours: Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    )
+      .toString()
+      .padStart(2, '0'),
+    minutes: Math.floor(
+      (distance % (1000 * 60 * 60)) / (1000 * 60)
+    )
+      .toString()
+      .padStart(2, '0'),
+    seconds: Math.floor((distance % (1000 * 60)) / 1000)
+      .toString()
+      .padStart(2, '0')
+  });
+};
+
 
     const timer = setInterval(updateTimer, 1000);
 

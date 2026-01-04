@@ -149,7 +149,7 @@ const PrizeSection = () => {
                 + Participation Certificate
               </h3>
               <p className="text-white/70 text-lg max-w-2xl mx-auto">
-                All participants will receive digital certificates of participation
+                All participants will receive physical certificates of participation, certificates of excellence, certificates of recognition.
               </p>
             </motion.div>
           </div>

@@ -16,6 +16,13 @@ const SponsorsPage = () => {
         logo: "/Untitled.png",
         url: "https://ethindia.co ",
         alt: "ETHINDIA LOGO"
+      },
+
+      {
+        name: "Rootnik Labs",
+        logo: "/rootnik.png",
+        url: "https://rootniklabs.com/",
+        alt: "Rootnik Labs LOGO"
       }
     ],
     hiring: [
@@ -32,6 +39,13 @@ const SponsorsPage = () => {
         logo: "/mastra.png", 
         url: "https://mastra.ai/",
         alt: "Mastra LOGO"
+      },
+
+      {
+        name: "The Mercy For Animals (MFA)",
+        logo: "/mercyforanimal.jpeg", 
+        url: "https://mercyforanimals.org/",
+        alt: "Mercy For Animals LOGO"
       },
 
       {
@@ -94,14 +108,14 @@ const SponsorsPage = () => {
         alt: "AOT SC CSE LOGO"
       }
     ],
-    // drink: [
-    //   {
-    //     name: "",
-    //     logo: "/red bull1.png",
-    //     url: "https://www.redbull.com/in-en",
-    //     alt: "Drink Partner LOGO"
-    //   }
-    // ],
+    food: [
+      {
+        name: "Suruchi Caterer",
+        logo: "/caterrer.jpg",
+        url: "",
+        alt: "Suruchi Caterer LOGO"
+      }
+    ],
     domain: [
       {
         name: "XYZ Domain",
@@ -239,10 +253,10 @@ const SponsorsPage = () => {
           titleColor="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent"
         />
 
-        {/* Drink Partner */}
-        <SponsorSection
-          title="Our Drink Partner"
-          sponsors={sponsors.drink}
+        {/* Food Partner */}
+        <SponsorSection 
+          title="Our Food Partner"
+          sponsors={sponsors.food}
           titleColor="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent"
         />
 

@@ -141,15 +141,6 @@ const CrewPage = () => {
         facebook: 'https://www.facebook.com/sarnick.sarkar.2025/',
       }
     },
-    {
-      name: 'Soumya Chakraborty',
-      role: 'Volunteer',
-      image: '/soumya.png',
-      socials: {
-        instagram: 'https://www.instagram.com/soumyachakraborty2006/',
-        facebook: 'https://www.facebook.com/ramprasad.chakraborty.399/',
-      }
-    },
     
     {
       name: 'Anik Bhattacharyya',
@@ -167,23 +158,6 @@ const CrewPage = () => {
       socials: {
         instagram: 'https://www.instagram.com/whos__arpan__/',
         facebook: 'https://www.facebook.com/arapn.bhowmick'
-      }
-    },
-    {
-      name: 'Surya Das',
-      role: 'Volunteer',
-      image: '/surya.png',
-      socials: {
-        instagram: 'https://www.instagram.com/its__surya__1',
-        facebook: 'https://www.facebook.com/profile.php?id=100081136884066',
-      }
-    },
-    {
-      name: 'Jeet bhowmick',
-      role: 'Volunteer',
-      image: '/jeet.png',
-      socials: {
-        instagram: 'https://www.instagram.com/jeet.bhowmick.2510',
       }
     },
     {
