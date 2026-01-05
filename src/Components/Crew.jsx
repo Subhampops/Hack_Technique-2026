@@ -110,6 +110,39 @@ const CrewPage = () => {
         facebook: ''
       }
     },
+
+    {
+      name: 'Milon Paul',
+      role: 'Photography & Videography',
+      image: '/milon.png',
+      socials: {
+        instagram: 'https://www.instagram.com/ghost159rider',
+        linkedin: 'https://www.linkedin.com/in/milon-paul-92b798302/',
+        facebook: ''
+      }
+    },
+
+    {
+      name: 'Krish Bouri',
+      role: 'Photography & Videography',
+      image: '/krish.png',
+      socials: {
+        instagram: 'https://www.instagram.com/_krish_bouri_',
+        linkedin: 'https://www.linkedin.com/in/krish-bouri-6b0010334/',
+        facebook: ''
+      }
+    },
+
+    {
+      name: 'Pratyush Dutta',
+      role: 'Photography & Videography',
+      image: '/pratush.png',
+      socials: {
+        instagram: 'https://www.instagram.com/rivu06_official',
+        linkedin: 'https://www.linkedin.com/in/pratyush-dutta-221b94302/',
+        facebook: ''
+      }
+    },
     
     {
       name: 'Surajit Guchhait',
